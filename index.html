@@ -15,7 +15,49 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <img 
+        srcset="images/"
+
+    src="images/museum.jpg" alt="placeholder">
+    
+    <section>
+      <img 
+        srcset="images/museum-320.jpg 320w,
+                images/museum-480.jpg 480w,
+                images/museum-720.jpg 720w,
+                images/museum-960.jpg 960w,"
+
+        sizes="(max-width:320px) 320px,
+               (max-width:460px) 460px,
+               (max-width:720px) 720px,
+               (max-width:980px) 960px,"
+
+        src="images/museum-960.jpg" 
+        alt="museum image">
+    </section>
+
+    <section>
+      <img 
+      class="avatar"
+      srcset="img/placeholder_320x320.png 1x,
+              img/placeholder_640x6400.png 2x,
+              img/placeholder_960x960.png 3x"
+      src="img/placeholder_640x640.png" 
+      alt="placeholder image">
+  </section>
+
+    <picture>
+        <source srcset="images/museum-1600x1600.jpg."
+                media="(min-width 960px)">
+
+        <source srcset="images/museum-1600.jpg."
+                media="(min-width 960px)">
+
+        <source srcset="images/museum-1600.jpg."
+                media="(min-width 960px)">
+                  
+          <img src="img/fall-dog-900.jpg" alt="a dog sitting on his cushion">
+      </picture>
 
   </header>
 </body>

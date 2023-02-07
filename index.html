@@ -15,49 +15,53 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img 
-        srcset="images/"
-
-    src="images/museum.jpg" alt="placeholder">
-    
-    <section>
-      <img 
-        srcset="images/museum-320.jpg 320w,
-                images/museum-480.jpg 480w,
-                images/museum-720.jpg 720w,
-                images/museum-960.jpg 960w,"
-
-        sizes="(max-width:320px) 320px,
-               (max-width:460px) 460px,
-               (max-width:720px) 720px,
-               (max-width:980px) 960px,"
-
-        src="images/museum-960.jpg" 
-        alt="museum image">
-    </section>
-
-    <section>
-      <img 
-      class="avatar"
-      srcset="img/placeholder_320x320.png 1x,
-              img/placeholder_640x6400.png 2x,
-              img/placeholder_960x960.png 3x"
-      src="img/placeholder_640x640.png" 
-      alt="placeholder image">
-  </section>
 
     <picture>
-        <source srcset="images/museum-1600x1600.jpg."
-                media="(min-width 960px)">
+      <source srcset="
+          images/museum-800x800.jpg 1x,
+          images/museum-1600x1600.jpg 2x,
+          images/museum-2400x2400.jpg 3x"
+              media="(min-width: 1600px)">
 
-        <source srcset="images/museum-1600.jpg."
-                media="(min-width 960px)">
+      <source srcset="
+          images/museum-640x640.jpg 1x, 
+          images/museum-1280x1280.jpg 2x,
+          images/museum-1920x1920.jpg 3x"
+              media="(min-width: 1280px)">
+      
+      <source srcset="
+          images/museum-480x480.jpg 1x,
+          images/museum-960x960.jpg 2x,
+          images/museum-1440x1440.jpg 3x"
+              media="(min-width: 960px)">
+          
+          <!--960px on top-->
 
-        <source srcset="images/museum-1600.jpg."
-                media="(min-width 960px)">
-                  
-          <img src="img/fall-dog-900.jpg" alt="a dog sitting on his cushion">
-      </picture>
+      <source srcset="
+          images/museum-320x180.jpg 1x,
+          images/museum-640x360.jpg 2x,
+          images/museum-960x540.jpg 3x"
+              media="(max-width: 320px)">
+
+      <source srcset="
+          images/museum-480x270.jpg 1x,
+          images/museum-960x540.jpg 2x,
+          images/museum-1440x810.jpg 3x"
+              media="(max-width: 480px)">
+
+      <source srcset="
+          images/museum-720x405.jpg 1x,
+          images/museum-1440x810.jpg 2x,
+          images/museum-2160x1215.jpg 3x"
+              media="(max-width: 720px)">
+
+      <source srcset="
+          images/museum-960x540.jpg 1x,
+          images/museum-1920x1080.jpg 2x,
+          images/museum-2880x1621.jpg 3x"
+              media="(max-width: 959px)">
+  
+      <img src="images/museum-960x540.jpg" alt="museum">
 
   </header>
 </body>
